@@ -67,7 +67,7 @@ function getNameArr() {
 			if (ajax.status === 200) {
 				codeList = JSON.parse(ajax.responseText);
 			} else {
-				console.error('ajax error');
+				console.log('ajax error');
 			}
 		}
 	};
