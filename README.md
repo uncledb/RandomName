@@ -6,7 +6,7 @@
 ├── static                      // 静态文件
 │   ├── css
 │   ├── js/index.js             // 核心逻辑 请审查随机逻辑是否作弊                     
-│   ├── prepare
+│   ├── prepare/parseExcel      // 解析人名Excel(未在项目中),生成人名json文件
 │   ├── imgs            
 │   └── index.html
 │   
