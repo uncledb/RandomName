@@ -5,7 +5,7 @@
 
 body {
     background: url("../imgs/backpic.png");
-    background-size: contain;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     text-align: center;

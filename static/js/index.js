@@ -15,9 +15,14 @@ let name = document.querySelector('#name');
 let choosedIndex = 0;
 btn.innerHTML = START_TEXT;
 
-// 随机逻辑
+// 随机 核心代码
 function randomMain() {
-	let randomKey = Math.floor(Math.random() * codeList.length);// [0,length)
+	return Math.floor(Math.random() * codeList.length);// [0,length)
+}
+
+// 执行随机逻辑
+function doRandom() {
+	let randomKey = randomMain();
 	choosedIndex = randomKey;
 	name.innerHTML = codeList[randomKey];
 }
@@ -29,7 +34,7 @@ function startOrEnd() {
 			return false;
 		}
 		clearInterval(interval);//防止产生多个定时器
-		interval = setInterval(randomMain, randomSpeed);
+		interval = setInterval(doRandom, randomSpeed);
 		btn.innerHTML = END_TEXT;
 		status = START;
 		$('body #fireworksField').hide();
