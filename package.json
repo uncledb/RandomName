@@ -1,0 +1,24 @@
+{
+  "name": "randomname",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uncledb/RandomName.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uncledb/RandomName/issues"
+  },
+  "homepage": "https://github.com/uncledb/RandomName#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery-fireworks": "^1.0.4",
+    "node-xlsx": "^0.11.2"
+  }
+}
