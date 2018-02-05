@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url("backpic.png");
+    background: url("../imgs/backpic.png");
     background-size: contain;
     width: 100vw;
     height: 100vh;

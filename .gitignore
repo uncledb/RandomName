@@ -1,5 +1,5 @@
 .idea
 .DS_Store
 node_modules
-prepare/nameArr.json
-prepare/names.xlsx
+static/prepare/nameArr.json
+static/prepare/names.xlsx

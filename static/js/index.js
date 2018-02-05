@@ -62,6 +62,6 @@ function getNameArr() {
 			}
 		}
 	};
-	ajax.open('get', '/RandomName/prepare/nameArr.json', false);
+	ajax.open('get', '/prepare/nameArr.json', false);
 	ajax.send();
 }
