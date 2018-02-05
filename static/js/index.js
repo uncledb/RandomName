@@ -7,13 +7,20 @@ const randomSpeed = 49;
 
 let status = END;
 let codeList = [];
-getNameArr();
+getNameArr();//获取人员列表
 
 let interval = undefined;
 let btn = document.querySelector('#btn');
 let name = document.querySelector('#name');
 let choosedIndex = 0;
 btn.innerHTML = START_TEXT;
+
+// 随机逻辑
+function randomMain() {
+	let randomKey = Math.floor(Math.random() * codeList.length);// [0,length)
+	choosedIndex = randomKey;
+	name.innerHTML = codeList[randomKey];
+}
 
 function startOrEnd() {
 	if (status === END) {// 当期是停止状态的话 执行开始的逻辑
@@ -22,11 +29,7 @@ function startOrEnd() {
 			return false;
 		}
 		clearInterval(interval);//防止产生多个定时器
-		interval = setInterval(function () {
-			let randomKey = Math.floor(Math.random() * codeList.length);
-			choosedIndex = randomKey;
-			name.innerHTML = codeList[randomKey];
-		}, randomSpeed);
+		interval = setInterval(randomMain, randomSpeed);
 		btn.innerHTML = END_TEXT;
 		status = START;
 		$('body #fireworksField').hide();
@@ -35,6 +38,7 @@ function startOrEnd() {
 		codeList.splice(choosedIndex, 1);//奖池里去掉这个人
 		btn.innerHTML = START_TEXT;
 		status = END;
+
 		// 放烟花庆祝一下
 		let smoke = $('body #fireworksField');
 		if (smoke.length > 0) {
