@@ -6,7 +6,7 @@ const OVER_TEXT = "都抽完了，明年再来！";
 const randomSpeed = 49;
 
 let status = END;
-let codeList = ["张三","李四","王二麻子","小淘气","张一","李二","王大麻子","真淘气"];
+let codeList = ["张三", "李四", "王二麻子", "小淘气", "张一", "李二", "王大麻子", "真淘气"];
 getNameArr();//获取人员列表
 
 let interval = undefined;
@@ -67,7 +67,7 @@ function getNameArr() {
 			if (ajax.status === 200) {
 				codeList = JSON.parse(ajax.responseText);
 			} else {
-				alert('ajax error');
+				console.error('ajax error');
 			}
 		}
 	};
