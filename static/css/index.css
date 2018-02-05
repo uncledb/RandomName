@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px !important;
+}
+
 body {
     background: url("../imgs/backpic.png");
     background-size: cover;
@@ -20,17 +26,26 @@ body {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.7);
     padding-top: 100px;
+    z-index: 1;
 }
 
-h1 {
+.info {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#name {
     font-size: 128px;
     background-color: transparent;
     color: #bed5ff;
 }
-.buttons{
+
+.buttons {
     margin-top: 100px;
 }
-button {
+
+#btn {
     width: 500px;
     height: 100px;
     background-color: #ff7611;
@@ -38,5 +53,39 @@ button {
     border: none;
     border-radius: 10px;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    z-index: 2;
+    display: none;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.choosed-list-label, .not-choosed-list-label {
+    color: #ff7611;
+}
+
+#choosed, #not_choosed {
+    color: #fff;
+}
+
+.border {
+    font-size: 40px;
+    margin: 60px 30px 0 30px;
+    padding: 10px 40px;
+    border: solid 1px #bed5ff;
 }
