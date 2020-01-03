@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>幸运点点乐</title>
-	<link rel="stylesheet" href="css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>幸运点点乐</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="random-container">
+      <div class="info">
+        <a href="javascript:;" onclick="lookLook();">查看奖池情况</a>
+      </div>
+      <div class="choosed">
+        <h1 id="name">准备好了吗?</h1>
+      </div>
+      <div class="buttons">
+        <a id="btn" href="javascript:;" onclick="startOrEnd()"></a>
+      </div>
+    </div>
 
-</head>
-<body>
+    <div class="modal">
+      <div class="close">
+        <a href="javascript:;" onclick="closeLook();">关闭奖池情况</a>
+      </div>
+      <div class="border">
+        <p class="choosed-list-label">
+          微微一笑，略表低调： <span id="choosed"></span>
+        </p>
+      </div>
+      <div class="border">
+        <p class="not-choosed-list-label">
+          火急火燎，咔咔跺脚： <span id="not_choosed"></span>
+        </p>
+      </div>
+    </div>
 
-<div class="random-container">
-	<div class="info">
-		<a href="javascript:;" onclick="lookLook();">查看奖池情况</a>
-	</div>
-	<div class="choosed">
-		<h1 id="name">准备好了吗?</h1>
-	</div>
-	<div class="buttons">
-		<button id="btn" onclick="startOrEnd()"></button>
-	</div>
-</div>
-
-<div class="modal">
-	<div class="close">
-		<a href="javascript:;" onclick="closeLook();">关闭奖池情况</a>
-	</div>
-	<div class="border">
-		<p class="choosed-list-label">微微一笑，略表低调： <span id="choosed"></span></p>
-	</div>
-	<div class="border">
-		<p class="not-choosed-list-label">火急火燎，咔咔跺脚： <span id="not_choosed"></span></p>
-	</div>
-</div>
-
-<script src="js/jquery.min.js"></script>
-<!-- 直接引用node_module会有问题 修改了一些内容 索性jquery也直接引入了 -->
-<script src="js/jquery.fireworks.js"></script>
-<script src="js/index.js"></script>
-</body>
+    <script src="js/jquery.min.js"></script>
+    <!-- 直接引用node_module会有问题 修改了一些内容 索性jquery也直接引入了 -->
+    <script src="js/jquery.fireworks.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
