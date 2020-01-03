@@ -226,8 +226,8 @@ jquery-fireworks@^1.0.4:
   resolved "http://registry.npmjs.lianjia.com:7001/jquery-fireworks/download/jquery-fireworks-1.0.4.tgz#46d4e406df2cacb1bace0917124061b017efcaa0"
 
 jquery@^3.3.1:
-  version "3.4.1"
-  resolved "http://registry.npmjs.lianjia.com:7001/jquery/download/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
 
 media-typer@0.3.0:
   version "0.3.0"
